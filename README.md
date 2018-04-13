@@ -1,7 +1,7 @@
 # wawyCBGuessGame01
 The number guessing game.
 
-Program use-Case for the Number Guessing Game
+Program Use-Case for the Number Guessing Game
 
 (1) The program generates randomly four sequence of numbers out of 10 (0 to 9) numbers and stored in memory.
 (2) The program asks users to guess four sequence of numbers out of 10 (0 to 9) numbers.

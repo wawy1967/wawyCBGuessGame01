@@ -1,25 +1,29 @@
-#include "..\include\GuessGame.h"
-using namespace std;
 
-int main()
-{
-    GuessGame game;
-    game.setTrial(0);
-    game.displayWelcomeMsg();
-    game.createGameSet();
-    while (game.getTrial()<game.getMaxTrial())
+    #include "..\include\GuessGame.h"
+    using namespace std;
+
+    int main()
     {
-        game.getUserGuess();
-        game.analyzeUserGuess();
-        game.displayGuessResult();
-        if (game.getSuccess())
+        GuessGame game;
+        game.setTrial(0);
+        game.displayWelcomeMsg();
+        game.createGameSet();
+        while (game.getTrial()<game.getMaxTrial())
         {
-            game.displaySuccessMsg();
-            return 0;
+            game.getUserGuess();
+            game.analyzeUserGuess();
+            game.displayGuessResult();
+            if (game.getSuccess())
+            {
+                game.displaySuccessMsg();
+                return 0;
+            }
+            else
+                game.increaseTrial();
         }
-        else
-            game.increaseTrial();
+        game.displayFailureMsg();
+        return 0;
     }
-    game.displayFailureMsg();
-    return 0;
-}
+
+
+

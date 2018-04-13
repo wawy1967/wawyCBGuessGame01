@@ -10,6 +10,6 @@ Program Use-Case for the Number Guessing Game
       #The correct number but not in correct position
       #The wrong number
 (4) The program display the results to the console.
-(5) If the guess is incorrect, he program allows users to repeat until n times. If the guess is correct, the program terminates.
+(5) If the guess is incorrect, the program allows users to repeat until n times. If the guess is correct, the program terminates.
 
 
